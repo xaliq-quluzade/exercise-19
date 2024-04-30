@@ -13,6 +13,6 @@ public class Book {
     private String title;
     private String author;
 
-    @OneToMany(mappedBy = "book")
-    private List<Professor> professor;
+    @OneToOne(mappedBy = "book")
+    private Professor professor;
 }

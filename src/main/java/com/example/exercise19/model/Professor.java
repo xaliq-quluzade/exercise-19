@@ -15,7 +15,7 @@ public class Professor {
     @JoinColumn(name = "department_id")
     private Department department;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "book_id")
     private Book book;
 }
